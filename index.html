@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Thermowaste Solutions . Thermocol Recycling in Delhi</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Thermowaste Solution is a recycling company. It recycles thermocol (EPS) waste. It buys and collects thermocol scrap from
+            electrical manufacturing companies and thermocol moulding manufacturers." />
+    <meta name="keywords" content="Recycling Company,Thermocol Recycle,Recycle industry,Thermocol" />
+    <meta name="DC.title" content="Thermowaste Solutions - Thermocol Recycling in Delhi" />
+    <meta name="google-site-verification" content="6WhXo8_6DSwn11E3Kozi4TZh_iw7pFvJqk-iVY0saHE" >
+
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800"> -->
+    <!-- <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans|Audiowide" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/landingPage.css">
+</head>
+
+<body class="bgImage" style="background-image:url(../assets/landingPage/bg1.jpg);">
+    <!-- <div class="bgImage"> -->
+	<p style="display: none;">
+	Thermowaste Solution is a recycling company. It recycles thermocol (EPS) waste. It buys and collects thermocol scrap from
+    electrical manufacturing companies and thermocol moulding manufacturers.
+	</p>
+
+    <div class="container-fluid p-0 ">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="workDropdown" data-toggle="dropdown" href="#">Our Work</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="householdWaste.html">Household Waste Management</a>
+                            <a class="dropdown-item" href="industrialWaste.html">Industrial Waste Management</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clients.html">Our Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="index.html">
+                <b>Thermowaste Solutions</b>
+                <img src="../assets/tLogoFinal.png" alt="" height="40">
+            </a>
+        </nav>
+        <div class="mx-auto ml-auto float-right" style="background-color: rgba(255, 255, 255, 0.0);width: 100%">
+            <img class="rounded img-fluid mx-auto float-right pr-2 pb-1 pt-1" style="width: 200px" src="../assets/company/sbalogo.png"
+                alt="Swachh bharat Abhiyan" />
+        </div>
+        <br>
+        <br>
+        <div class="mx-auto my-auto">
+            <br>
+            <br>
+
+
+            <br>
+            <br>
+            <img class="img-fluid mx-auto center" src="../assets/logo.png" alt="Micro Gartex Industries">
+            <br>
+            <h3 id="Hero1" class="text-center" style="font-size: 45px; color: black;">
+                <b>Helping Industries Recycle</b>
+            </h3>
+            <h3 id="Hero2" class="text-center" style="font-size: 45px;color: black;display: none;">
+                <b>And Making Cities Better</b>
+            </h3>
+        </div>
+        <br>
+
+
+    </div>
+
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <!-- <script src="/js/popper.min.js"></script> -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            {
+                showbanner2();
+            }
+        });
+        function showbanner1() {
+            setTimeout(function () {
+                banner2out();
+                setTimeout(function () {
+                    setTimeout(banner1in, 2000);
+                }, 10);
+            }, 2000);
+        }
+        function showbanner2() {
+            setTimeout(function () {
+                banner1out();
+                setTimeout(function () {
+                    setTimeout(banner2in, 2000);
+                }, 10);
+            }, 2000);
+        }
+
+        function banner1in() {
+            document.body.style.backgroundImage = 'url(../assets/landingPage/bg1.jpg)';
+            $('#Hero1').fadeIn("slow");
+            showbanner2();
+        }
+        function banner1out() {
+            $('#Hero1').fadeOut("slow");
+        }
+        function banner2in() {
+            document.body.style.backgroundImage = 'url(../assets/landingPage/bg2.jpg)';
+            $('#Hero2').fadeIn("slow");
+            showbanner1();
+        }
+        function banner2out() {
+            $('#Hero2').fadeOut("slow");
+        }
+
+    </script>
+</body>
+
+</html>

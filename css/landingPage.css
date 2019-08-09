@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Bookman Old';
+  src: url(../assets/BOOKOS.TTF); }
+
+.bgImage {
+  display: block;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+nav {
+  background: rgba(255, 255, 255, 0.8); }
+
+.content {
+  margin: 2px; }
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat',sans-serif; }
+
+h3 {
+  font-family: 'Bookman Old'; }
+
+.center {
+  display: block;
+  width: 200px; }
+
+#Hero {
+  display: block;
+  width: 500px; }
