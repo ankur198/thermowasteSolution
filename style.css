@@ -125,9 +125,10 @@ nav .right:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 0;
-  padding-bottom: 150px;
+  padding: 50px 0;
+  padding-bottom: 50px;
   color: #d8d6d6;
+  font-size: 1.4em;
 }
 
 @media screen and (max-width: 700px) {
@@ -171,7 +172,7 @@ nav .right:last-child {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 1.5em;
+  font-size: 1.1em;
   margin: 15px;
 }
 
