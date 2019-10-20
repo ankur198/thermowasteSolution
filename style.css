@@ -1,0 +1,207 @@
+@font-face {
+  font-family: FuturaLight;
+  src: url("futura.otf") format("opentype");
+}
+
+* {
+  font-family: "FuturaLight";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.397);
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav > div a {
+  padding: 0.3em;
+}
+
+nav .left {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+nav .right:last-child {
+  padding-right: 1em;
+}
+
+.onlyOnPhone {
+  display: none;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  background: url("./img/hero.jpg");
+  padding-top: 100px;
+  height: 100vh;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero > div {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  padding-left: 2em;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
+.hero > div h1 {
+  text-transform: uppercase;
+}
+
+.hero > div b {
+  color: green;
+}
+
+.spacer {
+  height: 10px;
+  width: 100%;
+  background-color: #09012c;
+}
+
+.article {
+  background: -webkit-gradient(linear, left top, right top, from(#01061a), to(#33bbdd));
+  background: linear-gradient(to right, #01061a 0%, #33bbdd 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  padding-bottom: 50px;
+  color: #d8d6d6;
+}
+
+.article .news {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.article .news a {
+  background-color: darkred;
+  color: white;
+  padding: 10px;
+  width: 80px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.article .news div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work > h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.work > div {
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.work > div > div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.work > div > div:hover {
+  width: 60%;
+  font-size: 1.1em;
+}
+
+.work > div > div div img {
+  width: 100%;
+  max-width: 200px;
+  margin: 20px;
+}
+
+.work > div > div:first-child {
+  background-color: #96b659;
+}
+
+.work > div > div:last-child {
+  background-color: #eac668;
+}
+/*# sourceMappingURL=style.css.map */

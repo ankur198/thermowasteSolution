@@ -1,0 +1,146 @@
+@font-face {
+  font-family: FuturaLight;
+  src: url("futura.otf") format("opentype");
+}
+* {
+  font-family: "FuturaLight";
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.397);
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  & > div {
+    display: flex;
+    align-items: center;
+    a {
+      padding: 0.3em;
+    }
+  }
+  .left {
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+  .right {
+    &:last-child {
+      padding-right: 1em;
+    }
+  }
+}
+.onlyOnPhone {
+  display: none;
+}
+
+.hero {
+  display: grid;
+  background: url("./img/hero.jpg");
+  padding-top: 100px;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & > div {
+    grid-row: 2;
+    padding-left: 2em;
+    color: whitesmoke;
+    font-size: 1.5em;
+    h1 {
+      text-transform: uppercase;
+    }
+    b {
+      color: green;
+    }
+  }
+}
+.spacer {
+  height: 10px;
+  width: 100%;
+  background-color: rgb(9, 1, 44);
+}
+.article {
+  background: linear-gradient(to right, #01061a 0%, #33bbdd 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 50px;
+  color: rgb(216, 214, 214);
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    a {
+      background-color: darkred;
+      color: white;
+      padding: 10px;
+      width: 80px;
+      align-self: center;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // align-items: center;
+    }
+  }
+}
+.work {
+  display: grid;
+  min-height: 100vh;
+  padding: 20px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  justify-content: center;
+  &>h1{
+      align-self: center;
+      font-size: 3rem;
+      margin-bottom: 0;
+  }
+  & > div {
+    max-width: 1000px;
+    display: flex;
+    & > div {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      padding: 10px;
+      padding-bottom: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      transition-duration: 0.5s;
+      &:hover {
+        width: 60%;
+        font-size: 1.1em;
+      }
+
+      div {
+        img {
+          width: 100%;
+          max-width: 200px;
+          margin: 20px;
+        }
+      }
+      &:first-child {
+        background-color: #96b659;
+      }
+      &:last-child{
+          background-color:#eac668; 
+      }
+    }
+  }
+}
