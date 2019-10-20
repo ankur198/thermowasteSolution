@@ -65,22 +65,29 @@ nav .right:last-child {
   display: none;
 }
 
+@media (max-width: 700px) {
+  .notOnPhone {
+    display: none;
+  }
+}
+
 .hero {
   display: -ms-grid;
   display: grid;
   background: url("./img/hero.jpg");
+  background-position: center;
   padding-top: 100px;
-  height: 100vh;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  height: 80vh;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .hero > div {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  padding-left: 2em;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  padding: 2em;
   color: whitesmoke;
   font-size: 1.5em;
 }
@@ -112,21 +119,23 @@ nav .right:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px;
+  padding: 100px 0;
   padding-bottom: 150px;
   color: #d8d6d6;
 }
 
 .article .news {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-column-gap: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 1500px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .article .news div {
+  max-width: 550px;
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,15 +179,28 @@ nav .right:last-child {
   font-size: 4.2rem;
 }
 
+@media screen and (max-width: 700px) {
+  .work > h1 {
+    font-size: 3.2rem;
+  }
+}
+
 .work > .cards {
-  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .work > .cards > .card {
-  width: 50%;
+  max-width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,8 +219,16 @@ nav .right:last-child {
   font-size: 1.5em;
 }
 
+@media screen and (max-width: 700px) {
+  .work > .cards > .card {
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+}
+
 .work > .cards > .card:hover {
-  width: 60%;
+  max-width: 500px;
   font-size: 1.6em;
 }
 
@@ -219,36 +249,22 @@ nav .right:last-child {
 
 .clients {
   background-color: #000922;
-  padding: 200px 100px;
+  padding: 200px 20px;
   padding-bottom: 100px;
 }
 
-.clients .clientImg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px;
-}
-
-.clients .clientImg img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  padding: 0 50px;
+@media screen and (max-width: 700px) {
+  .clients {
+    padding: 20px;
+  }
 }
 
 .clients .heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -266,7 +282,43 @@ nav .right:last-child {
 }
 
 .clients .heading img {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
+  padding: 10px;
+}
+
+.clients .clientImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .clients .clientImg {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .clients .clientImg img {
+    padding: 0 !important;
+  }
+}
+
+.clients .clientImg img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding: 20px 50px;
 }
 
 .contact {
@@ -275,6 +327,8 @@ nav .right:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

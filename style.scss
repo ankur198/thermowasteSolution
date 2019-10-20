@@ -47,19 +47,25 @@ nav {
 .onlyOnPhone {
   display: none;
 }
+@media (max-width: 700px) {
+  .notOnPhone {
+    display: none;
+  }
+}
 
 .hero {
   display: grid;
   background: url("./img/hero.jpg");
+  background-position: center;
   padding-top: 100px;
-  height: 100vh;
-  grid-template-rows: 1fr 1fr 1fr;
+  height: 80vh;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   background-repeat: no-repeat;
   background-size: cover;
 
   & > div {
-    grid-row: 2;
-    padding-left: 2em;
+    grid-row: 3;
+    padding: 2em;
     color: whitesmoke;
     font-size: 1.5em;
     h1 {
@@ -80,20 +86,20 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px;
+  padding: 100px 0;
   padding-bottom: 150px;
   color: rgb(216, 214, 214);
   .news {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 100px;
+    display: flex;
     max-width: 1500px;
+    flex-wrap: wrap;
 
     div {
+      max-width: 550px;
+      padding: 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      // align-items: center;
 
       a {
         background-color: darkred;
@@ -117,24 +123,36 @@ nav {
   & > h1 {
     align-self: center;
     font-size: 4.2rem;
+    @media screen and (max-width: 700px) {
+      font-size: 3.2rem;
+    }
   }
   & > .cards {
-    max-width: 1200px;
+    // max-width: 1200px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     & > .card {
-      width: 50%;
+      max-width: 400px;
       display: flex;
       flex-direction: column;
       margin: 40px;
       padding: 50px;
       padding-bottom: 20px;
-      // border: 2px solid black;
       box-shadow: 6px 7px 5px -0px rgba(0, 0, 0, 0.5);
       border-radius: 10px;
       transition-duration: 0.5s;
       font-size: 1.5em;
+
+      @media screen and (max-width: 700px) {
+        margin: 10px;
+        margin-bottom: 20px;
+        padding: 30px;
+      }
+
       &:hover {
-        width: 60%;
+        max-width: 500px;
         font-size: 1.6em;
       }
 
@@ -156,25 +174,18 @@ nav {
     }
   }
 }
+
 .clients {
   background-color: #000922;
-  padding: 200px 100px;
+  padding: 200px 20px;
   padding-bottom: 100px;
-  .clientImg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  @media screen and (max-width: 700px) {
     padding: 20px;
-    img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      padding: 0 50px;
-    }
   }
+
   .heading {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
@@ -185,14 +196,40 @@ nav {
       padding-bottom: 60px;
     }
     img {
-      width: 600px;
+      max-width: 600px;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .clientImg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1000px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+
+      img {
+        padding: 0 !important;
+      }
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      padding: 20px 50px;
     }
   }
 }
+
 .contact {
   background-color: rgb(0, 4, 19);
   padding: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   a {
