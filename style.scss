@@ -5,9 +5,6 @@
 * {
   font-family: "FuturaLight";
   font-size: 0.92em;
-  @media screen and (max-width: 700px) {
-    font-size: 0.95em;
-  }
 }
 body {
   margin: 0;
@@ -67,15 +64,53 @@ nav {
   background-size: cover;
 
   & > div {
+    background: rgba(4, 31, 56, 0.678);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     grid-row: 3;
     padding: 2em;
     color: whitesmoke;
-    font-size: 2em;
+    font-size: 2.3em;
     h1 {
       text-transform: uppercase;
     }
-    b {
+    span {
       color: green;
+    }
+    & > div:last-child {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.1em;
+      div {
+        margin-right: 30px;
+        padding: 0 10px;
+      }
+      .social {
+        
+        text-align: center;
+        transition-duration: 0.5s;
+        background: rgba(35, 141, 35, 0.534);
+        border: 3px solid rgb(1, 44, 1);
+        h1 {
+          color: white;
+          padding: 10px;
+          margin: 0.5em;
+          // margin-left: 0;
+        }
+        img {
+          width: 45px;
+          transition-duration: 0.5s;
+        }
+        &:hover {
+        background: rgba(35, 141, 35, 0.842);
+          // background: rgba(253, 253, 0, 0.842);
+          img {
+            width: 64px;
+          }
+        }
+      }
     }
   }
 }
