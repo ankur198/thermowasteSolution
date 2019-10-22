@@ -201,7 +201,7 @@ nav .right:last-child {
   }
 }
 
-.work > .cards {
+.work .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +215,18 @@ nav .right:last-child {
           justify-content: center;
 }
 
-.work > .cards > .card {
+.work .cards .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work .cards .row .card {
   max-width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,34 +247,34 @@ nav .right:last-child {
 }
 
 @media screen and (max-width: 700px) {
-  .work > .cards > .card {
+  .work .cards .row .card {
     margin: 10px;
     margin-bottom: 20px;
     padding: 30px;
   }
 }
 
-.work > .cards > .card:first-child {
-  background-color: #96b659;
-}
-
-.work > .cards > .card:nth-child(2) {
-  background-color: #7ba3fa;
-}
-
-.work > .cards > .card:nth-child(3) {
-  background-color: #ee9b63;
-}
-
-.work > .cards > .card:last-child {
-  background-color: #eac668;
-}
-
-.work > .cards > .card div img {
+.work .cards .row .card div img {
   width: 100%;
   max-width: 200px;
   margin: 20px;
   margin-top: 0;
+}
+
+#industrial {
+  background-color: #96b659;
+}
+
+#epr {
+  background-color: #7ba3fa;
+}
+
+#pro {
+  background-color: #ee9b63;
+}
+
+#household {
+  background-color: #eac668;
 }
 
 .clients {

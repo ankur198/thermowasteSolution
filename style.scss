@@ -139,58 +139,68 @@ nav {
       font-size: 3.2em;
     }
   }
-  & > .cards {
+  .cards {
     // max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    & > .card {
-      max-width: 270px;
+    .row {
       display: flex;
-      flex-direction: column;
-      margin: 40px;
-      padding: 30px;
-      padding-bottom: 20px;
-      box-shadow: 6px 7px 5px -0px rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
-      transition-duration: 0.5s;
-      font-size: 1.5em;
+      flex-wrap: wrap;
+      justify-content: center;
 
-      @media screen and (max-width: 700px) {
-        margin: 10px;
-        margin-bottom: 20px;
+      .card {
+        max-width: 270px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
         padding: 30px;
-      }
+        padding-bottom: 20px;
+        box-shadow: 6px 7px 5px -0px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        transition-duration: 0.5s;
+        font-size: 1.5em;
 
-      // &:hover {
-      //   max-width: 350px;
-      //   font-size: 1.6em;
-      // }
-
-      &:first-child {
-        background-color: #96b659;
-      }
-      &:nth-child(2){
-        background-color: rgb(123, 163, 250);
-      }
-      &:nth-child(3){
-        background-color: rgb(238, 155, 99);
-      }
-      &:last-child {
-        background-color: #eac668;
-      }
-
-      div {
-        img {
-          width: 100%;
-          max-width: 200px;
-          margin: 20px;
-          margin-top: 0;
+        @media screen and (max-width: 700px) {
+          margin: 10px;
+          margin-bottom: 20px;
+          padding: 30px;
         }
+
+        // &:hover {
+        //   max-width: 350px;
+        //   font-size: 1.6em;
+        // }
+
+        
+
+        div {
+          img {
+            width: 100%;
+            max-width: 200px;
+            margin: 20px;
+            margin-top: 0;
+          }
+        }
+
+        
       }
     }
   }
+}
+
+#industrial {
+  background-color: #96b659;
+}
+#epr {
+  background-color: rgb(123, 163, 250);
+}
+#pro {
+  background-color: rgb(238, 155, 99);
+}
+#household {
+  background-color: #eac668;
 }
 
 .clients {
