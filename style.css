@@ -5,7 +5,7 @@
 
 * {
   font-family: "FuturaLight";
-  font-size: 1em;
+  font-size: 0.92em;
 }
 
 @media screen and (max-width: 700px) {
@@ -46,7 +46,7 @@ nav > div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 4px;
 }
 
 nav > div a {
@@ -83,7 +83,7 @@ nav .right:last-child {
   background: url("./img/hero.jpg");
   background-position: center;
   padding-top: 100px;
-  height: 80vh;
+  height: 100vh;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ nav .right:last-child {
   grid-row: 3;
   padding: 2em;
   color: whitesmoke;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .hero > div h1 {
@@ -125,10 +125,9 @@ nav .right:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px 0;
-  padding-bottom: 50px;
+  padding: 30px 0;
   color: #d8d6d6;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 @media screen and (max-width: 700px) {
@@ -141,7 +140,6 @@ nav .right:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1500px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -151,7 +149,7 @@ nav .right:last-child {
 
 .article .news div {
   max-width: 550px;
-  padding: 50px;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,6 +172,7 @@ nav .right:last-child {
       align-self: center;
   font-size: 1.1em;
   margin: 15px;
+  text-align: center;
 }
 
 .work {
@@ -193,7 +192,7 @@ nav .right:last-child {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 4.2em;
+  font-size: 3.5em;
 }
 
 @media screen and (max-width: 700px) {
@@ -217,7 +216,7 @@ nav .right:last-child {
 }
 
 .work > .cards > .card {
-  max-width: 400px;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,15 +244,15 @@ nav .right:last-child {
 }
 
 .work > .cards > .card:hover {
-  max-width: 500px;
+  max-width: 350px;
   font-size: 1.6em;
 }
 
-.work > .cards > .card:first-child {
+.work > .cards > .card:last-child {
   background-color: #eac668;
 }
 
-.work > .cards > .card:last-child {
+.work > .cards > .card:first-child {
   background-color: #96b659;
 }
 
@@ -266,7 +265,7 @@ nav .right:last-child {
 
 .clients {
   background-color: #000922;
-  padding: 200px 20px;
+  padding: 200px 120px;
   padding-bottom: 100px;
 }
 
@@ -293,14 +292,14 @@ nav .right:last-child {
 
 .clients .heading h1 {
   color: white;
-  padding-right: 50px;
+  padding-right: 20px;
   font-size: 3em;
 }
 
 .clients .heading img {
-  max-width: 600px;
+  max-width: 270px;
   width: 100%;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .clients .clientImg {
@@ -332,14 +331,14 @@ nav .right:last-child {
 
 .clients .clientImg img {
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   padding: 20px 50px;
 }
 
 .contact {
   background-color: #000413;
-  padding: 15px;
+  padding: 15px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,7 +373,7 @@ nav .right:last-child {
 }
 
 .contact a img {
-  width: 40px;
+  width: 20px;
   padding-right: 20px;
 }
 
