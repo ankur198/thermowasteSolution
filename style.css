@@ -8,12 +8,6 @@
   font-size: 0.92em;
 }
 
-@media screen and (max-width: 700px) {
-  * {
-    font-size: 0.95em;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -91,19 +85,73 @@ nav .right:last-child {
 }
 
 .hero > div {
+  background: rgba(4, 31, 56, 0.678);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-grid-row: 3;
   grid-row: 3;
   padding: 2em;
   color: whitesmoke;
-  font-size: 2em;
+  font-size: 2.3em;
 }
 
 .hero > div h1 {
   text-transform: uppercase;
 }
 
-.hero > div b {
+.hero > div span {
   color: green;
+}
+
+.hero > div > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.1em;
+}
+
+.hero > div > div:last-child div {
+  margin-right: 30px;
+  padding: 0 10px;
+}
+
+.hero > div > div:last-child .social {
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background: rgba(35, 141, 35, 0.534);
+  border: 3px solid #012c01;
+}
+
+.hero > div > div:last-child .social h1 {
+  color: white;
+  padding: 10px;
+  margin: 0.5em;
+}
+
+.hero > div > div:last-child .social img {
+  width: 45px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.hero > div > div:last-child .social:hover {
+  background: rgba(35, 141, 35, 0.842);
+}
+
+.hero > div > div:last-child .social:hover img {
+  width: 64px;
 }
 
 .spacer {
