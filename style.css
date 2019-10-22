@@ -352,6 +352,13 @@ nav .right:last-child {
           align-items: center;
 }
 
+@media screen and (max-width: 700px) {
+  .contact {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
 .contact a {
   display: -webkit-box;
   display: -ms-flexbox;
