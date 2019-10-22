@@ -216,7 +216,7 @@ nav .right:last-child {
 }
 
 .work > .cards > .card {
-  max-width: 300px;
+  max-width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,7 +225,7 @@ nav .right:last-child {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 40px;
-  padding: 50px;
+  padding: 30px;
   padding-bottom: 20px;
   -webkit-box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 6px 7px 5px 0px rgba(0, 0, 0, 0.5);
@@ -243,17 +243,20 @@ nav .right:last-child {
   }
 }
 
-.work > .cards > .card:hover {
-  max-width: 350px;
-  font-size: 1.6em;
+.work > .cards > .card:first-child {
+  background-color: #96b659;
+}
+
+.work > .cards > .card:nth-child(2) {
+  background-color: #7ba3fa;
+}
+
+.work > .cards > .card:nth-child(3) {
+  background-color: #ee9b63;
 }
 
 .work > .cards > .card:last-child {
   background-color: #eac668;
-}
-
-.work > .cards > .card:first-child {
-  background-color: #96b659;
 }
 
 .work > .cards > .card div img {

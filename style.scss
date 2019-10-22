@@ -146,11 +146,11 @@ nav {
     align-items: center;
     justify-content: center;
     & > .card {
-      max-width: 300px;
+      max-width: 270px;
       display: flex;
       flex-direction: column;
       margin: 40px;
-      padding: 50px;
+      padding: 30px;
       padding-bottom: 20px;
       box-shadow: 6px 7px 5px -0px rgba(0, 0, 0, 0.5);
       border-radius: 10px;
@@ -163,16 +163,22 @@ nav {
         padding: 30px;
       }
 
-      &:hover {
-        max-width: 350px;
-        font-size: 1.6em;
-      }
+      // &:hover {
+      //   max-width: 350px;
+      //   font-size: 1.6em;
+      // }
 
-      &:last-child {
-        background-color: #eac668;
-      }
       &:first-child {
         background-color: #96b659;
+      }
+      &:nth-child(2){
+        background-color: rgb(123, 163, 250);
+      }
+      &:nth-child(3){
+        background-color: rgb(238, 155, 99);
+      }
+      &:last-child {
+        background-color: #eac668;
       }
 
       div {
